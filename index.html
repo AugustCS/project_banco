@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Izzy">
+	<meta name="description" content="Operaciones Kasnet">
+	<title>Operaciones Kasnet</title>
+	<link rel="stylesheet" type="text/css" href="estilos/reset.css">
+	<link rel="stylesheet" type="text/css" href="estilos/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	<link rel="stylesheet" type="text/css" href="estilos/animate.css">
+	<link rel="stylesheet" type="text/css" href="estilos/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Muli|Passion+One|Acme" rel="stylesheet">
+</head>
+<body>
+	<div class='wrapper aviso animated fadeInDown'><h1>Saldo Menor al monto ingresado o Monto Inválido</h1></div>
+	<div class="wrapper">
+		<header class="header-kasnet">
+			<img src="img/logo.png">
+			<h1>TRANSACCIONES KASNET</h1>
+		</header>
+		<form id="fkasnet" class="form-kasnet" method="POST">
+			<fieldset class="saldo-ini">
+				<label>INGRESE SALDO:</label>
+				<input step="any" required type="number" name="saldo" placeholder="ultimo saldo">
+			</fieldset>
+			<fieldset>
+				<label>N° OPERACION:</label>
+				<input required type="number" name="num_operacion" maxlength="6">
+			</fieldset>
+			<fieldset>
+				<label>SERVICIO:</label>
+				<input required style="width: 65%;" type="text" name="servicio">
+			</fieldset>
+			<fieldset>
+				<label>TIPO:</label>
+				<select required name="transaccion">
+					<option value="D">DEPOSITO</option>
+					<option value="P">PAGO</option>
+					<option value="R">RETIRO</option>
+					<option value="C">PAPA</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<label>MONTO:</label>
+				<input step="any" required type="number" name="monto">
+			</fieldset>
+			<fieldset>
+				<label>FECHA:</label>
+				<input required id="datepicker" type="text" name="fecha">
+			</fieldset>
+			<fieldset>
+				<input type="reset" value="LIMPIAR">
+				<input type="submit" value="REGISTRAR">
+			</fieldset>
+		</form>
+		<form id="f-fecha" class="form-find">
+			<label>BUSCAR POR:</label>
+			<input id="buscador" type="text" placeholder="Fecha transaccion" name="fecha-find">
+			<input type="submit" value="Buscar">
+		</form>
+		<form class="form-find f-logica">
+			<label>BUSCAR POR:</label>
+			<select required name="transaccion">
+					<option value="D">DEPOSITO</option>
+					<option value="P">PAGO</option>
+					<option value="R">RETIRO</option>
+					<option value="C">PAPA</option>
+			</select>
+			<input type="submit" value="Buscar">
+		</form>
+		<form class="form-find f-servicio">
+			<label>BUSCAR POR:</label>
+			<input type="text" placeholder="Servicio" name="fecha-find">
+			<input type="submit" value="Buscar">
+		</form>
+	</div>
+	<div id="table-box" class="wrapper box-table">
+			
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/datepicker_logica.js"></script>
+	<script src="js/logica.js"></script>
+</body>
+</html>

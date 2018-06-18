@@ -1,0 +1,122 @@
+body{
+	background:#013ca6;
+}
+*{
+	box-sizing: border-box;
+}
+.wrapper{
+	width: 1160px;
+	height: auto;
+	margin:0 auto;
+	background:white;
+}
+.header-kasnet{
+	background:#fcb314;
+}
+.header-kasnet img{
+	display: inline-block;
+	vertical-align: top;
+}
+.header-kasnet h1{
+	font-size: 30px;
+	color:white;
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'Oswald', sans-serif;
+	padding:20px 0;
+	padding-left: 10px;
+	color:#013ca6;
+}
+.form-kasnet{
+	padding:5px;
+	text-align: left;
+}
+.form-kasnet fieldset{
+	display: inline-block;
+	vertical-align: top;
+	width: 24%;
+	padding:5px;
+	padding-left: 7px;
+}
+.form-kasnet label{
+	font-family: 'Muli', sans-serif;
+}
+.form-kasnet fieldset input,.form-kasnet fieldset select{
+	width: 45%;
+	padding:7px;
+	border:none;
+	border-radius: 3px;
+	border: 2px solid #013ca6;
+}
+.form-kasnet fieldset input[type="submit"],.form-kasnet fieldset input[type="reset"]{
+	width: 40%;
+	background:#013ca6;
+	color:white;
+}
+.box-table{
+	height: 450px;
+	background:;
+	text-align: center;
+	background:#f9e498;
+	padding:5px;
+	padding-top: 15px;
+	overflow: auto;
+}
+.table-kasnet{
+	display: inline-block;
+	vertical-align: top;
+	width: 98%;
+}
+.table-kasnet th, .table-kasnet td{
+	border:2px solid gray;
+	padding:10px 18px;
+	font-family: 'Passion One', cursive;
+	font-size: 21px;
+}
+.color{
+	color:#ec1c24;
+}
+.aviso{
+	background:#ff0000;
+	padding:5px;
+	text-align: center;
+	display: none;
+}
+.aviso h1{
+	font-family: 'Acme', sans-serif;
+	font-size: 20px;
+	color:white;
+}
+.color-fila{
+	background:white;
+}
+.form-find{
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+	padding:5px;
+}
+.form-find label{
+	font-family: 'Muli', sans-serif;
+}
+.form-find input[type="submit"]{
+	display: inline-block;
+	vertical-align: top;
+	padding:8px 10px;
+	background:#013ca6;
+	color:white;
+	border-radius: 3px;
+}
+.form-find input{
+	padding:7px;
+	border:none;
+	border-radius: 3px;
+	border: 2px solid #013ca6;
+}
+.f-logica select{
+	padding:7px;
+	border:none;
+	border-radius: 3px;
+	width: 45%;
+	border: 2px solid #013ca6;
+}
